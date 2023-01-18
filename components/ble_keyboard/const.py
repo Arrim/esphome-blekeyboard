@@ -605,6 +605,13 @@ BUTTONS_KEY: Final = [
         CONF_DISABLED_BY_DEFAULT: False,
     },
     {
+        CONF_NAME: "Power",
+        CONF_ID: "key_power",
+        CONF_ICON: "mdi:power",
+        CONF_VALUE: 0x66,
+        CONF_DISABLED_BY_DEFAULT: False,
+    },
+    {
         CONF_NAME: "Next track",
         CONF_ID: "key_media_next_track",
         CONF_ICON: "mdi:skip-next",
