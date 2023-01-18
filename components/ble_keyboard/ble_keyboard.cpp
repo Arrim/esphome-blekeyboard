@@ -89,7 +89,7 @@ void Esp32BleKeyboard::press(uint8_t key, bool with_timer) {
       this->update_timer();
     }
 
-    bleKeyboard.press(key);
+    bleKeyboard.write(key);
     delay(default_delay_);
     bleKeyboard.releaseAll();
   }
@@ -100,7 +100,7 @@ void Esp32BleKeyboard::press(MediaKeyReport key, bool with_timer) {
     if (with_timer) {
       this->update_timer();
     }
-    bleKeyboard.press(key);
+    bleKeyboard.write(key);
     delay(default_delay_);
     bleKeyboard.releaseAll();
   }
